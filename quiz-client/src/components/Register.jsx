@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { Button, TextField, Box, Card, CardContent, Link, Typography } from '@mui/material';
-import Center from './Center';
+import { useNavigate, Link } from 'react-router-dom';
 import useForm from '../hooks/useForm';
 import logo from '../assets/images/logo.png';
 import { createAPIEndpoint, ENDPOINTS } from '../api';
 import useStateContext from '../hooks/useStateContext';
-import { useNavigate } from 'react-router-dom';
 
 const getFreshModel = () => ({
     name: '',
@@ -76,79 +74,68 @@ export default function Register() {
     };
 
     return (
-        <Center>
-            <Card sx={{ width: 300 }}>
-                <CardContent>
-                    <Box
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                        flexDirection={'column'}
-                        textAlign={'center'}
-                        sx={{
-                            '& .MuiTextField-root': {
-                                m: 1,
-                                width: '90%'
-                            }
-                        }}>
-                        <img src={logo} alt="logo" />
-                        <form noValidate autoComplete="on" onSubmit={register}>
-                            <TextField
-                                label="El. paštas"
-                                name="email"
-                                type="email"
-                                value={values.email}
-                                onChange={handleInputChange}
-                                variant="standard"
-                                {...(errors.email && { error: true, helperText: errors.email })}
-                            />
-                            <TextField
-                                label="Vardas"
-                                name="name"
-                                value={values.name}
-                                onChange={handleInputChange}
-                                variant="standard"
-                                {...(errors.name && { error: true, helperText: errors.name })}
-                            />
-                            <TextField
-                                label="Slaptažodis"
-                                name="password"
-                                type="password"
-                                value={values.password}
-                                onChange={handleInputChange}
-                                variant="standard"
-                                {...(errors.password && { error: true, helperText: errors.password })}
-                            />
-                            <TextField
-                                label="Patvirtinkite slaptažodį"
-                                name="confirmPassword"
-                                type="password"
-                                value={values.confirmPassword}
-                                onChange={handleInputChange}
-                                variant="standard"
-                                {...(errors.confirmPassword && { error: true, helperText: errors.confirmPassword })}
-                            />
-                            {serverError && (
-                                <Typography color="error" variant="body2" sx={{ mt: 2 }}>
-                                    {serverError}
-                                </Typography>
-                            )}
-                            <Box sx={{ display: 'flex', justifyContent: 'flex-end', m: 1 }}>
-                                <Link href='/' sx={{ marginRight: 1 }}>
-                                    Atgal
-                                </Link>
-                                <Button
-                                    type="submit"
-                                    variant="contained"
-                                    size="medium"
-                                >
-                                    Užsiregistruoti
-                                </Button>
-                            </Box>
-                        </form>
-                    </Box>
-                </CardContent>
-            </Card>
-        </Center>
+        <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg p-6">
+            <div className="flex flex-col items-center text-center">
+                <img src={logo} alt="logo" className="w-20 mb-4" />
+                <form noValidate autoComplete="on" onSubmit={register} className="w-full">
+                    <div className="mb-4">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="El. paštas"
+                            value={values.email}
+                            onChange={handleInputChange}
+                            className={`w-full p-2 border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded`}
+                        />
+                        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                    </div>
+                    <div className="mb-4">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Vardas"
+                            value={values.name}
+                            onChange={handleInputChange}
+                            className={`w-full p-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded`}
+                        />
+                        {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
+                    </div>
+                    <div className="mb-4">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Slaptažodis"
+                            value={values.password}
+                            onChange={handleInputChange}
+                            className={`w-full p-2 border ${errors.password ? 'border-red-500' : 'border-gray-300'} rounded`}
+                        />
+                        {errors.password && <p className="text-red-500 text-xs mt-1">{errors.password}</p>}
+                    </div>
+                    <div className="mb-4">
+                        <input
+                            type="password"
+                            name="confirmPassword"
+                            placeholder="Patvirtinkite slaptažodį"
+                            value={values.confirmPassword}
+                            onChange={handleInputChange}
+                            className={`w-full p-2 border ${errors.confirmPassword ? 'border-red-500' : 'border-gray-300'} rounded`}
+                        />
+                        {errors.confirmPassword && <p className="text-red-500 text-xs mt-1">{errors.confirmPassword}</p>}
+                    </div>
+                    {serverError && (
+                        <p className="text-red-500 text-xs mb-4">{serverError}</p>
+                    )}
+                    <div className="flex justify-between items-center mt-4">
+                        <Link to="/" className="text-blue-500 text-sm">Atgal</Link>
+                        <button
+                            type="submit"
+                            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        >
+                            Užsiregistruoti
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     );
 }
