@@ -1,40 +1,86 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
-const Header = ({ isLoggedIn, onLogout, name }) => { // Accept name as a prop
-    return (
-        <AppBar position="static">
-            <Toolbar>
-                <Box display="flex" alignItems="center" flexGrow={1}>
-                    <img src={logo} alt="Logo" style={{ height: 40, marginRight: 16 }} />
-                    <Typography variant="h6" component={Link} to="/" sx={{ color: 'white', textDecoration: 'none' }}>
-                        Pagrindinis
-                    </Typography>
-                    <Button component={Link} to="/about" sx={{ color: 'white', marginLeft: 2 }}>
-                        Apie mus
-                    </Button>
-                    {isLoggedIn && (
-                        <Button component={Link} to="/profile" sx={{ color: 'white', marginLeft: 2 }}>
-                            {name}
-                        </Button>
-                    )}
-                </Box>
-                <Box>
-                    {isLoggedIn ? (
-                        <Button onClick={onLogout} sx={{ color: 'white', marginLeft: 2 }}>
-                            Išeiti
-                        </Button>
-                    ) : (
-                        <Button component={Link} to="/login" sx={{ color: 'white', marginLeft: 2 }}>
-                            Prisijungti
-                        </Button>
-                    )}
-                </Box>
-            </Toolbar>
-        </AppBar>
-    );
+const Header = ({ isLoggedIn, onLogout, name }) => {
+  return (
+    <header>
+      <div className="p-4 flex justify-between items-center w-full">
+        {/* Логотип */}
+        <div className="w-1/4">        <a href="/" className="flex items-center">
+          <img src={logo} alt="Logo" className="w-24 p-2" />
+        </a></div>
+
+        {/* Навигация */}
+        <div className="w-1/2">
+        <nav className="flex gap-x-5 justify-center">
+          <Link
+            to="/quiz-list"
+            className="hover:text-blue-200 transition"
+          >
+            Pradėti quizą
+          </Link>
+          <Link
+            to="/make-quiz"
+            className="hover:text-blue-200 transition"
+          >
+            Sukurti quizą
+          </Link>
+          <Link
+            to="/about"
+            className="hover:text-blue-200 transition"
+          >
+            Apie QuizTeam
+          </Link>
+          <Link
+            to="/contacts"
+            className="hover:text-blue-200 transition"
+          >
+            Kontaktai
+          </Link>
+          {isLoggedIn && (
+            <Link
+              to="/profile"
+              className="hover:text-blue-200 transition"
+            >
+              {name}
+            </Link>
+            
+          )}
+        </nav>
+        </div>
+        {/* Кнопки авторизации */}
+        <div className="flex space-x-4 w-1/4 justify-end">
+  {isLoggedIn ? (
+    // Кнопка выхода
+    <button
+      onClick={onLogout}
+      className="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-lg transition"
+    >
+      Išeiti
+    </button>
+  ) : (
+    // Ссылки для входа и регистрации
+    <>
+      <Link
+        to="/login"
+        className="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-lg transition"
+      >
+        Prisijungti
+      </Link>
+      <Link
+        to="/register"
+        className="bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-lg transition"
+      >
+        Užsiregistruoti
+      </Link>
+    </>
+  )}
+</div>
+
+      </div>
+    </header>
+  );
 };
 
 export default Header;

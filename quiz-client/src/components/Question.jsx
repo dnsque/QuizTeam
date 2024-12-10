@@ -1,11 +1,12 @@
-import React, { useContext } from 'react'
-import useStateContext from '../hooks/useStateContext'
+import Options from "./Options";
 
-export default function Question() {
-
- const {context, setContext} = useStateContext()
-
-    return (
-    <div>Question</div>
-  )
+function Question({ question, dispatch, answer }) {
+  return (
+    <div className="question_container">
+      <h4>{question.question}</h4>
+      <Options question={question} dispatch={dispatch} answer={answer} />
+    </div>
+  );
 }
+
+export default Question;

@@ -7,7 +7,7 @@ const Footer = () => {
             component="footer"
             sx={{
                 mt: 'auto',               // Automatically adjust margin to push footer down
-                color: 'white',           // Text color
+                color: 'black',           // Text color
                 textAlign: 'center',      // Center align text
                 padding: 2,               // Padding for the footer
                 position: 'relative',      // Ensure relative positioning

@@ -9,35 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuizAPI
 build_property.RootNamespace = QuizAPI
-build_property.ProjectDir = C:\Users\Денис\Desktop\STUDY\Quiz-app\QuizAPI\QuizAPI\
+build_property.ProjectDir = C:\Users\Денис\Desktop\WORK\StudyJS\Quiz-app\QuizAPI\QuizAPI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Денис\Desktop\STUDY\Quiz-app\QuizAPI\QuizAPI
+build_property.MSBuildProjectDirectory = C:\Users\Денис\Desktop\WORK\StudyJS\Quiz-app\QuizAPI\QuizAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Questions/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Questions/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Questions/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Questions/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Questions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Денис/Desktop/STUDY/Quiz-app/QuizAPI/QuizAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Денис/Desktop/WORK/StudyJS/Quiz-app/QuizAPI/QuizAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

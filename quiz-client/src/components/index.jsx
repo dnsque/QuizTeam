@@ -6,3 +6,6 @@ export { default as Profile } from './Profile';
 export { default as Register } from './Register';
 export { default as ProtectedRoute } from './ProtectedRoute';
 export { default as AuthHeader } from './AuthHeader';
+export { default as QuizPage } from './QuizPage';
+export { default as AboutPage } from './AboutPage';
+export { default as QuizList } from './QuizList';

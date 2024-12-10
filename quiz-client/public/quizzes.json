@@ -1,0 +1,177 @@
+{
+  "quizzes": [
+    {
+      "id": 0,
+      "title": "Pagrindai apie žiniatinklį (Web Development)",
+      "image": "https://images.surferseo.art/9602bc4b-cfc4-410e-b291-611d478c9d6a.png",
+      "questions": [
+        {
+          "question": "Koks yra 'alt' atributo tikslas HTML <img> žymėje?",
+          "options": [
+            "Nurodyti paveikslėlio šaltinį",
+            "Pateikti alternatyvų tekstą paveikslėliui",
+            "Nustatyti paveikslėlio dydį",
+            "Nuoroda į URL su paveikslėliu"
+          ],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Kuri HTML žyma naudojama nuorodai apibrėžti?",
+          "options": ["<link>", "<href>", "<a>", "<url>"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Kas yra CSS trumpinys?",
+          "options": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Coded Style Sheets"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Kuris atributas naudojamas nustatyti fono spalvą CSS?",
+          "options": ["background-color", "bg-color", "color", "background"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Kurios iš šių yra ne JavaScript duomenų tipas?",
+          "options": ["String", "Boolean", "Integer", "Array"],
+          "correctOption": 2,
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "image": "https://www.datocms-assets.com/48401/1628644950-javascript.png?auto=format&fit=max&w=1200",
+      "title": "JavaScript ir DOM Manipuliavimas",
+      "questions": [
+        {
+          "question": "Koks bus šio kodo rezultatas? `console.log(2 + '2')`",
+          "options": ["'22'", "4", "Klaida", "'2'2'"],
+          "correctOption": 0,
+          "points": 20
+        },
+        {
+          "question": "Kuri metodas naudojama pasirinkti elementą pagal jo id JavaScript?",
+          "options": ["getElementById()", "querySelector()", "getElementsByClassName()", "getElementByClass()"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Koks yra `addEventListener` metodo tikslas?",
+          "options": [
+            "Jis klauso įvykio ir vykdo atitinkamą funkciją",
+            "Jis prideda naują elementą į DOM",
+            "Jis prideda CSS klasę prie elemento",
+            "Jis pašalina įvykio klausytoją"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Koks yra `this` raktažodžio tikslas JavaScript?",
+          "options": [
+            "Nuoroda į dabartinį objektą",
+            "Nuoroda į ankstesnį objektą",
+            "Naudojama kintamajam deklaruoti",
+            "Funkcija objektams kurti"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Kurį metodą naudoti konvertuoti eilutę į skaičių JavaScript?",
+          "options": ["parseInt()", "parseFloat()", "toNumber()", "Number()"],
+          "correctOption": 3,
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5DVZ-OhBgrRZzNo53w-m9EIX7t9_2qb65WA&s",
+      "title": "Bendrieji Žinių Klausimai",
+      "questions": [
+        {
+          "question": "Kas nutapė Mona Lizą?",
+          "options": ["Vincent van Gogh", "Leonardas da Vinci", "Pablo Picasso", "Claude Monet"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Koks yra Prancūzijos sostinė?",
+          "options": ["Berlynas", "Madrid", "Paryžius", "Roma"],
+          "correctOption": 2,
+          "points": 10
+        },
+        {
+          "question": "Kuri planeta žinoma kaip Raudonoji planeta?",
+          "options": ["Marsas", "Venera", "Žemė", "Jupiteris"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Koks yra didžiausias žinduolis žemėje?",
+          "options": ["Afrikos drambliai", "Mėlynas banginis", "Žirafos", "Rekiniai"],
+          "correctOption": 1,
+          "points": 10
+        },
+        {
+          "question": "Kuriame krašte randamas Didysis barjerinis rifas?",
+          "options": ["Australija", "JAV", "Brazilija", "Pietų Afrika"],
+          "correctOption": 0,
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://mytopschools.com/wp-content/uploads/2019/09/Computer-Science-Bursaries-mytopschools..jpg",
+      "title": "Kompiuterių Mokslo Konceptai",
+      "questions": [
+        {
+          "question": "Kas reiškia 'CPU'?",
+          "options": ["Central Processing Unit", "Central Programming Unit", "Central Power Unit", "Central Printer Unit"],
+          "correctOption": 0,
+          "points": 20
+        },
+        {
+          "question": "Kurie iš šių yra operacinės sistemos pavyzdys?",
+          "options": ["Windows", "MySQL", "JavaScript", "GitHub"],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Koks yra pagrindinis operacinės sistemos tikslas?",
+          "options": [
+            "Tvarkyti kompiuterio aparatūrą ir programinę įrangą",
+            "Kurti ir tvarkyti failus",
+            "Prijungti kompiuterį prie interneto",
+            "Apsaugoti sistemą nuo virusų"
+          ],
+          "correctOption": 0,
+          "points": 10
+        },
+        {
+          "question": "Ką reiškia 'Cloud' kompiuterijoje?",
+          "options": [
+            "Duomenų saugojimo ir paslaugų teikimas per internetą",
+            "Operacinė sistema, naudojama daugelyje kompiuterių",
+            "Virtualus mašinas tipas",
+            "Kompiuterio komponentas"
+          ],
+          "correctOption": 0,
+          "points": 20
+        },
+        {
+          "question": "Kuri programavimo kalba dažniausiai naudojama žiniatinklio kūrimui?",
+          "options": ["Python", "JavaScript", "C++", "Java"],
+          "correctOption": 1,
+          "points": 10
+        }
+      ]
+    }
+  ]
+}

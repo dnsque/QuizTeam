@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Righteous', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
+      textColor: {
+        primary: '#0A6972', 
       },
     },
   },

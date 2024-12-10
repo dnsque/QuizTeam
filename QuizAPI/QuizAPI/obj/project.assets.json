@@ -11618,11 +11618,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Денис\\Desktop\\STUDY\\Quiz-app\\QuizAPI\\QuizAPI\\QuizAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Денис\\Desktop\\WORK\\StudyJS\\Quiz-app\\QuizAPI\\QuizAPI\\QuizAPI.csproj",
       "projectName": "QuizAPI",
-      "projectPath": "C:\\Users\\Денис\\Desktop\\STUDY\\Quiz-app\\QuizAPI\\QuizAPI\\QuizAPI.csproj",
+      "projectPath": "C:\\Users\\Денис\\Desktop\\WORK\\StudyJS\\Quiz-app\\QuizAPI\\QuizAPI\\QuizAPI.csproj",
       "packagesPath": "C:\\Users\\Денис\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Денис\\Desktop\\STUDY\\Quiz-app\\QuizAPI\\QuizAPI\\obj\\",
+      "outputPath": "C:\\Users\\Денис\\Desktop\\WORK\\StudyJS\\Quiz-app\\QuizAPI\\QuizAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Денис\\AppData\\Roaming\\NuGet\\NuGet.Config",
